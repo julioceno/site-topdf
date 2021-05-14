@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To PDF</title>
+
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <link rel="stylesheet" href="./public/styles/page-login.css">
+
+    <link rel="shortcut icon" href="public/images/site-icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div id="container">
+        <header class="header">
+            
+            <a 
+                href="./index.html" 
+                class="logo"
+            >
+                <img 
+                    src="./public/images/logo.png" 
+                    alt="LOGO"
+                >
+            </a>
+
+        </header>
+
+        <section class="section">
+            <form 
+                class="container-credentials"
+                action="/login" 
+                method="POST"  
+            >
+                <header>
+                    <h3>Entrar</h3>
+                </header>
+
+                <main>
+                    <div class="inputs">
+                        <div class="input">
+                            <div class="icon">
+                                <img src="./public/images/icon-input-email.svg" alt="Icone usuário">
+                            </div>
+                            <input type="email" name="email" required> 
+                        </div>
+
+                        <div class="input">
+                            <div class="icon">
+                                <img src="./public/images/icon-input-password.svg" alt="Icone cadeado">
+                            </div>
+                            <input type="password" name="password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-interactions">
+                        <div class="show-password">
+                            <input type="checkbox" name="" id="check">
+                            <label for="check">sss</label>
+                        
+                        </div>
+
+                        <a class="forgot-password" href="#">
+                            <p>Esqueceu a senha?</p>
+                        </a>
+                    </div>
+                </main>
+
+                <input type="submit" value="Login">
+            </form>
+        </section>
+       
+    </div>
+</body>
+
+
+</html>
