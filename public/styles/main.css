@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #0C0C0C;
+    --black_dark: #090909;
+    --black_light: #121214;
+    --black_extra_light: #262626;
+
+    --red: #FF0036;
+    --red_light: #C01F41;
+    --red_extra_light: #ED3238;
+    --red_dark: #7D001B;
+
+    --white: #F9FCFB;
+
+    --grey: #9E9E9E;
+    --grey_light: #8B8B8B;
+    --grey_dark: #838383;
+
+    --font_Jost: 'Jost', sans-serif;
+
+    font-size: 62.5%;
+}
+
+html,
+body{
+    height: 100%;
+
+    scroll-behavior: smooth;
+
+}

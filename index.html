@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To PDF</title>
+
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <link rel="stylesheet" href="./public/styles/page-landing.css">
+
+    <link rel="shortcut icon" href="public/images/site-icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body id="page-landing">
+    <div id="container">
+        <header class="header">
+            
+            <a 
+                href="./index.html" 
+                class="logo"
+            >
+                <img 
+                    src="./public/images/logo.png" 
+                    alt="LOGO"
+                >
+            </a>
+         
+
+            <div class="buttons">
+             
+                <a 
+                    href="" 
+                    class="login"
+                >
+                    Entrar
+                </a>
+
+                <a 
+                    href=""
+                    class="register"    
+                >
+                    Registrar-se
+                </a>
+            </div>
+
+        </header>
+
+        <section class="section">
+
+            <div class="container-all-cards">
+
+                <div class="container-card">
+                    <div class="text">
+                        <h3> Entre para nossa família </h3>
+                        <p> 
+                            Crie uma conta agora e nunca mais tenha
+                            trabalho com conversão de arquivos para pdf. 
+                        </p>
+                    </div>
+        
+                    <img src="./public/images/vetor-enter-to-family.svg" alt="Entre para a nossa familia ">
+                </div>
+
+                <hr class="line">
+
+                <div class="container-card">
+                    <div class="text">
+                        <h3> 
+                            Nós guardamos o seus pdf’s para você 
+                        </h3>
+                        <p> 
+                            Assim que você converter algo para pdf 
+                            vamos manter esse pdf guardado até você
+                            baixar. Mas caso você queira deletar terá 
+                            total liberdade para isto. 
+                        </p>
+                    </div>
+        
+                    <img src="./public/images/vetor-we-save-your-pdfs.svg" alt="Salvamos seus pdfs">
+                </div>
+
+                <hr class="line">
+
+                <div class="container-card">
+                    <div class="text">
+                        <h3> 
+                            Temos um aplicativo disponível
+                            para você 
+                        </h3>
+                        <p>
+                            Com o nosso aplicativo disponível para 
+                            você acessar de qualquer dispositivo móvel
+                            você poderá acessar os seus pdf’s que você
+                            converteu de qualquer lugar, ou se mesmo 
+                            preferir pode gerar novos lá mesmo! 
+                        </p>
+                    </div>
+        
+                    <img src="./public/images/vetor-we-have-an-app.svg" alt="Temos um aplicativo">
+                </div>
+
+                <hr class="line">
+
+                <div class="container-card">
+                    <div class="text">
+                        <h3> Seus Pdf’s estão seguros conosco! </h3>
+                        <p> 
+                            Pode ficar despreocupado, seus pdf’s ficarão 
+                            seguros aqui conosco, não salvamos nenhum 
+                            documento na sua própria máquina sem sua 
+                            permissão impedindo que pessoas más 
+                            intencionadas tenham acesso a eles sem seu 
+                            conhecimento. 
+                        </p>
+                    </div>
+        
+                    <img src="./public/images/vetor-your-secure-pdfs.svg" alt="Seus pdf's estão seguros conosco">
+                </div>
+            </div>
+
+        </section>
+    
+        <footer class="footer">
+            <p>Faça o <a href="">Download</a>  do aplicativo</p>
+
+            <a href="#page-landing" class="button">
+                <img src="./public/images/icon-come-ack-top.svg" alt="Voltar ao topo">
+            </a>
+        </footer>
+    </div>
+</body>
+
+<script>
+    const btn = document.querySelector('.button')
+
+    function scrollingtop() { // Essa função é chamada direto do html através do onclick
+        document.documentElement.scrollTop = 0
+    }
+</script>
+</html>
