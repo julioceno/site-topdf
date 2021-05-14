@@ -119,13 +119,55 @@ form main .form-interactions {
     justify-content: space-between;
     padding: 0 1rem;
     margin-top: 1rem;
+
+    font-weight: 300;
+}
+
+form main .form-interactions .checkbox-wrapper {
+    color: var(--white);
+    font-family: var(--font_Jost);
+
+  
+}
+
+form main .form-interactions .checkbox-wrapper input {
+    display: none;
+}
+
+form main .form-interactions .checkbox-wrapper label {
+    display: flex;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+
+}
+
+form main .form-interactions .checkbox-wrapper label:before {
+    content: "";
+    display: block;
+    height: clamp(1.4rem, 1.5vw, 1.7rem);
+    width: clamp(1.4rem, 1.5vw, 1.7rem);
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+    border-radius: 2px;
+    margin-right: 6px;
+
+
+}
+
+#check:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 417 325' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M159.677 318.279C155.696 322.283 150.266 324.517 144.624 324.517C138.983 324.517 133.552 322.283 129.571 318.279L9.35675 198.045C-3.11892 185.569 -3.11892 165.339 9.35675 152.887L24.4094 137.83C36.889 125.355 57.0957 125.355 69.5713 137.83L144.624 212.887L347.428 10.0794C359.907 -2.39626 380.134 -2.39626 392.59 10.0794L407.642 25.136C420.118 37.6116 420.118 57.8378 407.642 70.294L159.677 318.279Z' fill='%23FF0036'/%3E%3C/svg%3E%0A");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .2s ease-in-out;
+
+    background-color: var(--white);
 }
 
 form main .form-interactions a {
     text-decoration: none;
     color: var(--grey);
     font-family: var(--font_Jost);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
 
     transition: background .2s;
 }

@@ -53,19 +53,18 @@
                             <div class="icon">
                                 <img src="./public/images/icon-input-password.svg" alt="Icone cadeado">
                             </div>
-                            <input type="password" name="password" required>
+                            <input type="password" name="password" id="password" required>
                         </div>
                     </div>
 
                     <div class="form-interactions">
-                        <div class="show-password">
-                            <input type="checkbox" name="" id="check">
-                            <label for="check">sss</label>
-                        
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="check" onclick="showPassword()">
+                            <label for="check">Mostrar senha</label>
                         </div>
 
                         <a class="forgot-password" href="#">
-                            <p>Esqueceu a senha?</p>
+                            <p>Perdeu a sua senha??</p>
                         </a>
                     </div>
                 </main>
@@ -76,6 +75,5 @@
        
     </div>
 </body>
-
-
+<script src="./public/javascript/forgot-password.js"></script>
 </html>
