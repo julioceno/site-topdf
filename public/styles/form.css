@@ -32,19 +32,14 @@
 }
 
 .container-credentials {
-    height: clamp(30rem, 50vw, 41rem);
+    min-height: clamp(30rem, 50vw, 35rem);
     width: clamp(25rem, 65vw, 40rem);
-
     border-radius: 1.5rem;
-
     background: var(--black);
-
     padding: clamp(2.5rem, 3vw, 3rem) clamp(2rem, 3vw, 3rem) clamp(1rem, 2vw, 3rem);
-
     
     display: flex;
     flex-direction: column;
-
 }
 
 form header h3 {
@@ -113,12 +108,11 @@ form .inputs .input input {
     margin-left: 1rem;
 }
 
-
 form main .form-interactions {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-    margin-top: 1rem;
+    margin-top: clamp(1rem, 1vw ,1.5rem);
 
     font-weight: 300;
 }
@@ -126,8 +120,6 @@ form main .form-interactions {
 form main .form-interactions .checkbox-wrapper {
     color: var(--white);
     font-family: var(--font_Jost);
-
-  
 }
 
 form main .form-interactions .checkbox-wrapper input {
@@ -152,6 +144,8 @@ form main .form-interactions .checkbox-wrapper label:before {
 
 
 }
+
+
 
 #check:checked + label::before {
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 417 325' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M159.677 318.279C155.696 322.283 150.266 324.517 144.624 324.517C138.983 324.517 133.552 322.283 129.571 318.279L9.35675 198.045C-3.11892 185.569 -3.11892 165.339 9.35675 152.887L24.4094 137.83C36.889 125.355 57.0957 125.355 69.5713 137.83L144.624 212.887L347.428 10.0794C359.907 -2.39626 380.134 -2.39626 392.59 10.0794L407.642 25.136C420.118 37.6116 420.118 57.8378 407.642 70.294L159.677 318.279Z' fill='%23FF0036'/%3E%3C/svg%3E%0A");
@@ -200,6 +194,8 @@ form input[type="submit"] {
     cursor: pointer;
 
     transition: background .2s;
+
+    margin-top: 7rem;
 }
 
 form input[type="submit"]:hover {

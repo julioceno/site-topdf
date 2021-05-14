@@ -8,17 +8,18 @@
 
     <link rel="stylesheet" href="./public/styles/main.css">
     <link rel="stylesheet" href="./public/styles/animation.css">
+    <link rel="stylesheet" href="./public/styles/pop-ups.css">
     <link rel="stylesheet" href="./public/styles/form.css">
 
     <link rel="shortcut icon" href="public/images/site-icon.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body >
     <div id="container">
         <header class="header">
-            
             <a 
                 href="./index.html" 
                 class="logo"
@@ -36,9 +37,10 @@
                 class="container-credentials"
                 action="/login" 
                 method="POST"  
+                onsubmit="validate(event)"
             >
                 <header>
-                    <h3>Entrar</h3>
+                    <h3>Se registrar</h3>
                 </header>
 
                 <main>
@@ -54,7 +56,15 @@
                             <div class="icon">
                                 <img src="./public/images/icon-input-password.svg" alt="Icone cadeado">
                             </div>
-                            <input type="password" name="password" id="password" required>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+
+                        <div class="input">
+                            <div class="icon">
+                                <img src="./public/images/icon-input-password.svg" alt="Icone cadeado">
+                            </div>
+                            <input type="password" name="password" id="confirm-password" required>
                         </div>
                     </div>
 
@@ -63,18 +73,33 @@
                             <input type="checkbox" id="check" onclick="showPassword()">
                             <label for="check">Mostrar senha</label>
                         </div>
-
-                        <a class="forgot-password" href="./forgot-password.html">
-                            <p>Perdeu a sua senha??</p>
-                        </a>
                     </div>
                 </main>
 
-                <input type="submit" value="Login">
+                <input type="submit" value="Criar conta">
             </form>
         </section>
        
+
+        <div class="modal-popup animation-appearModal">
+
+            <div class="popup">
+                <header>
+                    <button type="button">
+                        <img src="./public/images/icon-minimize-popup.svg" alt="minimizar popup">
+                    </button>
+                </header>
+                
+                <main>
+                    <p>Ops... detectamos um erro ao criar sua conta.</p>
+                    <p>A senha que você digitou não confere com a confirmação que você escreveu posteriormente.</p>
+                </main>
+
+            </div>
+        </div>
     </div>
+
+
 </body>
-<script src="./public/javascript/page-login.js"></script>
+<script src="./public/javascript/page-register.js"></script>
 </html>

@@ -4,13 +4,13 @@ const popup = document.querySelector(".popup")
 
 const message = (window.location.href).split('?message=')[1]
 
-if (message === "incorrect&email") {
+
+if (message === "incorrect&code") {
     modal.classList.add('appear-modal')
     popup.classList.add('appear-popup')
 }
 
- // Escondendo o modal e o popup
- modal.addEventListener('click', e => {
+modal.addEventListener('click', e => {
     const minimize = document.querySelector(".popup")
 
    if (e.target.classList[0] == "modal-popup" || minimize) {
